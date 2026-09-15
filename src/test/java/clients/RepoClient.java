@@ -1,9 +1,9 @@
-package test.java.clients;
+package clients;
 
+import config.ApiConfig;
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import test.java.config.ApiConfig;
 
 public class RepoClient {
 

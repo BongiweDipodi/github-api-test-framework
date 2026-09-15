@@ -1,12 +1,12 @@
-package test.java.tests.repos;
-
-import io.restassured.response.Response;
-import org.junit.jupiter.api.Test;
-import test.java.clients.RepoClient;
+package tests.repos;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
+import org.junit.jupiter.api.Test;
+
+import clients.RepoClient;
+import io.restassured.response.Response;
 
 public class RepoTests {
     private final RepoClient repoClient = new RepoClient();
