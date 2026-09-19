@@ -1,7 +1,7 @@
 package clients;
 
-import config.ApiConfig;
 import static io.restassured.RestAssured.given;
+import config.ApiConfig;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 

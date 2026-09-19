@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "login": { "type": "string" }
+      },
+      "required": ["login"]
+    },
+    "private": { "type": "boolean" }
+  },
+  "required": ["id", "name", "owner", "private"]
+}

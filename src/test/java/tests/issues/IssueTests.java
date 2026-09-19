@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.isA;
 import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import org.junit.jupiter.api.Test;
 
 import clients.RepoClient;
@@ -18,6 +19,10 @@ public class IssueTests {
     @Test
     void listIssues_returnsArrayWithExpectedShape() {
         Response response = repoClient.listIssues("octocat", "Hello-World");
+        assumeTrue(
+            response.getStatusCode() < 500,
+            "GitHub API is currently unavailable (status " + response.getStatusCode() + "); skipping live API test."
+        );
 
         response.then()
             .statusCode(200)
