@@ -46,9 +46,7 @@ No scopes are needed on the token for these tests — public read access is enou
 Tests run automatically on every push via GitHub Actions (`.github/workflows/ci.yml`).
 
 ## Demo
+https://youtu.be/xOB64luY66Q
 
-[Demo video link — add once recorded]
-
-## Project background
-
-Built as part of the Quality Assurance elective, with a focus on test design decisions and steady iteration rather than a single large submission. Commit history reflects the build process over several weeks.
+verification code:
+WTC-KP7WFVD2
